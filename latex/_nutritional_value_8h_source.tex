@@ -1,0 +1,43 @@
+\hypertarget{_nutritional_value_8h_source}{}\doxysection{Nutritional\+Value.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Peter Shi on 2021-\/11-\/07.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef GROUP23\_NUTRITIONALVALUE\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define GROUP23\_NUTRITIONALVALUE\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <unordered\_map>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <stdexcept>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_nutritional_value}{NutritionalValue}} \{}
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15     \textcolor{keywordtype}{int} calories;}
+\DoxyCodeLine{16     \textcolor{keywordtype}{double} totalFat;}
+\DoxyCodeLine{17     \textcolor{keywordtype}{double} sodium;}
+\DoxyCodeLine{18     \textcolor{keywordtype}{double} totalCarbs;}
+\DoxyCodeLine{19     \textcolor{keywordtype}{double} protein;}
+\DoxyCodeLine{20     std::unordered\_map<std::string, double> otherNutritionalValues;}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_nutritional_value_a353b3d4c69b11741b9fb7eb07abf85e8}{NutritionalValue}}(\textcolor{keywordtype}{int} calories, \textcolor{keywordtype}{double} totalFat, \textcolor{keywordtype}{double} sodium, \textcolor{keywordtype}{double} totalCarbs, \textcolor{keywordtype}{double} protein,}
+\DoxyCodeLine{23                      std::unordered\_map<std::string, double> otherNutritionalValues);}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_nutritional_value_a7a6bdf132d4676e3370cd01593a02308}{\string~NutritionalValue}}();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_nutritional_value_a49ff596442dd05f95be7b8e5ec6fb672}{getCalories}}();}
+\DoxyCodeLine{27     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_nutritional_value_ab1dd1a7003634eb8da6896b284a7eee8}{getTotalFat}}();}
+\DoxyCodeLine{28     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_nutritional_value_af905b3437375e6e72654d8aa02f3ee47}{getSodium}}();}
+\DoxyCodeLine{29     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_nutritional_value_a240a378285a8cfc71319a3b1e112b463}{getTotalCarbs}}();}
+\DoxyCodeLine{30     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_nutritional_value_a04962b8d8e84d1bf17beecb55ddd6337}{getProtein}}();}
+\DoxyCodeLine{31     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_nutritional_value_a7b6abccafe9ceb6f3e202b990c620641}{getOtherNutritionalValue}}(std::string nutrientName);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_nutritional_value_a368612a20d32215c574c4227bf5c37aa}{setCalories}}(\textcolor{keywordtype}{int} calories);}
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_nutritional_value_a1ef9c88d38d4a727682dfd708ab01438}{setTotalFat}}(\textcolor{keywordtype}{double} totalFat);}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_nutritional_value_ae765cb96a560da7b6c29208a1dc3818c}{setSodium}}(\textcolor{keywordtype}{double} sodium);}
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_nutritional_value_a9293f3db4509b8ad6267059dd1d53b31}{setTotalCarbs}}(\textcolor{keywordtype}{double} totalCarbs);}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_nutritional_value_a7d6ec76217cd7b16eaf5997ccb052edb}{setProtein}}(\textcolor{keywordtype}{double} protein);}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_nutritional_value_a56d7384d5b3bac02a7532c55d9614684}{addOtherNutritionalValue}}(std::string nutrientName, \textcolor{keywordtype}{double} nutrientAmount);}
+\DoxyCodeLine{39 \};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//GROUP23\_NUTRITIONALVALUE\_H}}
+
+\end{DoxyCode}

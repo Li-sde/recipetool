@@ -1,0 +1,52 @@
+\hypertarget{_recipe_window_8h_source}{}\doxysection{Recipe\+Window.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Donald Zou on 2021-\/11-\/23.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef GROUP23\_RECIPEWINDOW\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define GROUP23\_RECIPEWINDOW\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}main.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}RecipeListWindow.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}QCloseEvent"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_recipe_window}{RecipeWindow}} : \textcolor{keyword}{public} QMainWindow\{}
+\DoxyCodeLine{15 Q\_OBJECT}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     QWidget *prevWindow;}
+\DoxyCodeLine{18     \mbox{\hyperlink{classrecipe}{recipe}} *rec;}
+\DoxyCodeLine{19     QWidget *Recipe\_Window = \textcolor{keyword}{new} QWidget();}
+\DoxyCodeLine{20     QVBoxLayout *MainLayout = \textcolor{keyword}{new} QVBoxLayout();}
+\DoxyCodeLine{21     QGroupBox *Nav = \textcolor{keyword}{new} QGroupBox();}
+\DoxyCodeLine{22     QGridLayout *NavLayout = \textcolor{keyword}{new} QGridLayout();}
+\DoxyCodeLine{23     QGroupBox *MainBody = \textcolor{keyword}{new} QGroupBox;}
+\DoxyCodeLine{24     QVBoxLayout *MainBodyLayout = \textcolor{keyword}{new} QVBoxLayout();}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_data_base}{DataBase}} *DB;}
+\DoxyCodeLine{26     QScrollArea *MainBodyScroll = \textcolor{keyword}{new} QScrollArea();}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} RecipeWindowNav();}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} RecipeWindowNavBody();}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} RecipeWindowMainBody();}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} RecipeInfo();}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} RecipeIngredientList();}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} RecipeKitchenwareList();}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} RecipeProcedure();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} Back();}
+\DoxyCodeLine{37 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_recipe_window_ac9c9c5c006000ff01bfde2cf1de96e34}{closeEvent}}(QCloseEvent *event);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{keyword}{public}:}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_recipe_window_a45623415dd058c7466c879e7f293bac0}{RecipeWindow}}(\mbox{\hyperlink{classrecipe}{recipe}} *Recipe, \mbox{\hyperlink{class_data_base}{DataBase}} *db, QWidget *recipeListWindow);}
+\DoxyCodeLine{44     \mbox{\hyperlink{class_recipe_window_adfe544198f08d3aa2a3a839a7a00f22b}{\string~RecipeWindow}}();}
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_recipe_window_a88bee4e301e16a7514c46c9c48515aea}{WindowShow}}();}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_recipe_window_af197dac7d1d42114815be401161c9568}{WindowClose}}();}
+\DoxyCodeLine{47 \};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//GROUP23\_RECIPEWINDOW\_H}}
+
+\end{DoxyCode}

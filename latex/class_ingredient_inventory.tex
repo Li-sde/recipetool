@@ -1,0 +1,108 @@
+\hypertarget{class_ingredient_inventory}{}\doxysection{Ingredient\+Inventory Class Reference}
+\label{class_ingredient_inventory}\index{IngredientInventory@{IngredientInventory}}
+
+
+This class represents the ingredient Inventory of the user, it contains an unordered map with ingredient id and amount.  
+
+
+
+
+{\ttfamily \#include $<$Ingredient\+Inventory.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ingredient_inventory_a37b48a8cc2204f6287fd723ab34f7291}{Ingredient\+Inventory}} (unordered\+\_\+map$<$ std\+::string, int $>$ new\+\_\+ingredients)
+\begin{DoxyCompactList}\small\item\em This is the constructor of the class, it receives an unordered map links ingredient id and its amount. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ingredient_inventory_adec11fb9356bdbfaf4cfd644b6f82b78}{$\sim$\+Ingredient\+Inventory}} ()
+\item 
+int \mbox{\hyperlink{class_ingredient_inventory_ac515199d3919138988abadd95ccc5dfb}{get\+\_\+ingredient\+\_\+amount}} (string ingredient\+\_\+id)
+\begin{DoxyCompactList}\small\item\em This class gets the ingredient amount of the inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ingredient_inventory_a2298568cb70845eca231f7e8dbe2dd52}{set\+\_\+ingredient\+\_\+amount}} (string ingredient\+\_\+id, int amount)
+\begin{DoxyCompactList}\small\item\em This class sets the ingredient amount of the inventory. \end{DoxyCompactList}\item 
+unordered\+\_\+map$<$ string, int $>$ \mbox{\hyperlink{class_ingredient_inventory_a2c8929f46baca73d4a34e1438f17d11b}{get\+\_\+all\+\_\+inventory}} ()
+\begin{DoxyCompactList}\small\item\em This class returns the unordered map contains ingredients and their corresponding amount. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the ingredient Inventory of the user, it contains an unordered map with ingredient id and amount. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ingredient_inventory_a37b48a8cc2204f6287fd723ab34f7291}\label{class_ingredient_inventory_a37b48a8cc2204f6287fd723ab34f7291}} 
+\index{IngredientInventory@{IngredientInventory}!IngredientInventory@{IngredientInventory}}
+\index{IngredientInventory@{IngredientInventory}!IngredientInventory@{IngredientInventory}}
+\doxysubsubsection{\texorpdfstring{IngredientInventory()}{IngredientInventory()}}
+{\footnotesize\ttfamily Ingredient\+Inventory\+::\+Ingredient\+Inventory (\begin{DoxyParamCaption}\item[{unordered\+\_\+map$<$ std\+::string, int $>$}]{new\+\_\+ingredients }\end{DoxyParamCaption})}
+
+
+
+This is the constructor of the class, it receives an unordered map links ingredient id and its amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+ingredients} & unordered map links ingredient id and its amount \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ingredient_inventory_adec11fb9356bdbfaf4cfd644b6f82b78}\label{class_ingredient_inventory_adec11fb9356bdbfaf4cfd644b6f82b78}} 
+\index{IngredientInventory@{IngredientInventory}!````~IngredientInventory@{$\sim$IngredientInventory}}
+\index{````~IngredientInventory@{$\sim$IngredientInventory}!IngredientInventory@{IngredientInventory}}
+\doxysubsubsection{\texorpdfstring{$\sim$IngredientInventory()}{~IngredientInventory()}}
+{\footnotesize\ttfamily Ingredient\+Inventory\+::$\sim$\+Ingredient\+Inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+De-\/constructor for the object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ingredient_inventory_a2c8929f46baca73d4a34e1438f17d11b}\label{class_ingredient_inventory_a2c8929f46baca73d4a34e1438f17d11b}} 
+\index{IngredientInventory@{IngredientInventory}!get\_all\_inventory@{get\_all\_inventory}}
+\index{get\_all\_inventory@{get\_all\_inventory}!IngredientInventory@{IngredientInventory}}
+\doxysubsubsection{\texorpdfstring{get\_all\_inventory()}{get\_all\_inventory()}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$ string, int $>$ Ingredient\+Inventory\+::get\+\_\+all\+\_\+inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This class returns the unordered map contains ingredients and their corresponding amount. 
+
+\begin{DoxyReturn}{Returns}
+unordered map contains ingredients and their corresponding amount 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ingredient_inventory_ac515199d3919138988abadd95ccc5dfb}\label{class_ingredient_inventory_ac515199d3919138988abadd95ccc5dfb}} 
+\index{IngredientInventory@{IngredientInventory}!get\_ingredient\_amount@{get\_ingredient\_amount}}
+\index{get\_ingredient\_amount@{get\_ingredient\_amount}!IngredientInventory@{IngredientInventory}}
+\doxysubsubsection{\texorpdfstring{get\_ingredient\_amount()}{get\_ingredient\_amount()}}
+{\footnotesize\ttfamily int Ingredient\+Inventory\+::get\+\_\+ingredient\+\_\+amount (\begin{DoxyParamCaption}\item[{string}]{ingredient\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+This class gets the ingredient amount of the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ingredient\+\_\+id} & represents the ingredient id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int represents the amount of the ingredient 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ingredient_inventory_a2298568cb70845eca231f7e8dbe2dd52}\label{class_ingredient_inventory_a2298568cb70845eca231f7e8dbe2dd52}} 
+\index{IngredientInventory@{IngredientInventory}!set\_ingredient\_amount@{set\_ingredient\_amount}}
+\index{set\_ingredient\_amount@{set\_ingredient\_amount}!IngredientInventory@{IngredientInventory}}
+\doxysubsubsection{\texorpdfstring{set\_ingredient\_amount()}{set\_ingredient\_amount()}}
+{\footnotesize\ttfamily void Ingredient\+Inventory\+::set\+\_\+ingredient\+\_\+amount (\begin{DoxyParamCaption}\item[{string}]{ingredient\+\_\+id,  }\item[{int}]{amountP }\end{DoxyParamCaption})}
+
+
+
+This class sets the ingredient amount of the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ingredient\+\_\+id} & String represents the ingredient id \\
+\hline
+{\em amountP} & represents the amount \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Ingredient\+Inventory.\+h\item 
+Ingredient\+Inventory.\+cpp\end{DoxyCompactItemize}

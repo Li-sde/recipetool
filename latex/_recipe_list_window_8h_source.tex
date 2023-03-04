@@ -1,0 +1,71 @@
+\hypertarget{_recipe_list_window_8h_source}{}\doxysection{Recipe\+List\+Window.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GROUP23\_RECIPELISTWINDOW\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GROUP23\_RECIPELISTWINDOW\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_data_base_8h}{DataBase.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}main.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}RecipeListWindow.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QApplication>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QHBoxLayout>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QVBoxLayout>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QStackedLayout>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QTextBlock>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QLineEdit>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QTextEdit>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <QGroupBox>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <QListWidget>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <QScrollBar>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <QColor>}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include <QStyle>}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include <QFont>}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include <QCloseEvent>}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include <QScrollArea>}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include "{}main.h"{}}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{33 \textcolor{keyword}{class }\mbox{\hyperlink{class_recipe_list_window}{RecipeListWindow}} : \textcolor{keyword}{public} QMainWindow \{}
+\DoxyCodeLine{34     Q\_OBJECT}
+\DoxyCodeLine{35 \textcolor{keyword}{private}:}
+\DoxyCodeLine{36     QPushButton* m\_button = \textcolor{keyword}{new} QPushButton();}
+\DoxyCodeLine{37     QLabel* label = \textcolor{keyword}{new} QLabel();}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_data_base}{DataBase}}* DB;}
+\DoxyCodeLine{39     \mbox{\hyperlink{classrecipe}{recipe}}* rec;}
+\DoxyCodeLine{40     QLineEdit* text = \textcolor{keyword}{new} QLineEdit();}
+\DoxyCodeLine{41     QVBoxLayout* MainLayout  = \textcolor{keyword}{new} QVBoxLayout();}
+\DoxyCodeLine{42     QWidget* Recipe\_List\_Window = \textcolor{keyword}{new} QWidget();}
+\DoxyCodeLine{43     QGroupBox* NavBox = \textcolor{keyword}{new} QGroupBox();}
+\DoxyCodeLine{44     QGridLayout* NavLayout = \textcolor{keyword}{new} QGridLayout();}
+\DoxyCodeLine{45     QGroupBox* searchBox = \textcolor{keyword}{new} QGroupBox();}
+\DoxyCodeLine{46     QHBoxLayout* SerchLayout = \textcolor{keyword}{new} QHBoxLayout();}
+\DoxyCodeLine{47     QGridLayout* MainListLayout = \textcolor{keyword}{new} QGridLayout();}
+\DoxyCodeLine{48     QScrollArea* MainBodyScroll = \textcolor{keyword}{new} QScrollArea();}
+\DoxyCodeLine{49     QGroupBox* MainList = \textcolor{keyword}{new} QGroupBox();}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} handleButton();}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} handleBackButton();}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} handleAddButton();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} RecipeListWindowNav();}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} RecipeListWindowSerchBar();}
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} RecipeListWindowNavBody(); }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} RecipeList();}
+\DoxyCodeLine{58 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} handleInventoryButton();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{keyword}{public}:}
+\DoxyCodeLine{62     \mbox{\hyperlink{class_recipe_list_window_a5de21552e813504d27dbc52d72833951}{RecipeListWindow}}(\mbox{\hyperlink{class_data_base}{DataBase}}* db);}
+\DoxyCodeLine{63     \mbox{\hyperlink{class_recipe_list_window}{\string~RecipeListWindow}}();}
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_recipe_list_window_a100d3b2dbf0ba09a0abae691bde7edfa}{WindowShow}}();}
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_recipe_list_window_a728180a42f63f4a06d8ada5411d36560}{WindowHide}}();}
+\DoxyCodeLine{66 \};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//GROUP23\_RECIPELISTWINDOW\_H}}
+
+\end{DoxyCode}

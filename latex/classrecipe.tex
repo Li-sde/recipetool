@@ -1,0 +1,339 @@
+\hypertarget{classrecipe}{}\doxysection{recipe Class Reference}
+\label{classrecipe}\index{recipe@{recipe}}
+
+
+this class have all function need to create a recipe and all recipe function that usefull  
+
+
+
+
+{\ttfamily \#include $<$recipe.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrecipe_a7a3e8d97c8cbb89ed6e1a9de50c25be7}{recipe}} (std\+::string, std\+::string, std\+::string, int, std\+::unordered\+\_\+map$<$ std\+::string, int $>$, std\+::unordered\+\_\+map$<$ std\+::string, int $>$, std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$)
+\begin{DoxyCompactList}\small\item\em this class have all function need to create a recipe and all recipe function that usefull \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrecipe_ad6ef435fec950a61a4abad6dadd28362}\label{classrecipe_ad6ef435fec950a61a4abad6dadd28362}} 
+{\bfseries $\sim$recipe} ()
+\begin{DoxyCompactList}\small\item\em A de-\/constructor for this class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classrecipe_a647b1c00fbcedbe8919e251c550700c4}{get\+\_\+recipe\+\_\+id}} ()
+\item 
+void \mbox{\hyperlink{classrecipe_a1d97e3a9aa33308911a758272e95cd69}{set\+\_\+recipe\+\_\+id}} (int)
+\item 
+\mbox{\Hypertarget{classrecipe_a8ab4553a543e84ccf6ec2c8ea7a6909c}\label{classrecipe_a8ab4553a543e84ccf6ec2c8ea7a6909c}} 
+std\+::string {\bfseries get\+\_\+recipe\+\_\+name} ()
+\item 
+void \mbox{\hyperlink{classrecipe_ac16394fd7c9079d47e34d2628ba663e0}{set\+\_\+recipe\+\_\+name}} (std\+::string)
+\item 
+int \mbox{\hyperlink{classrecipe_a8607cf7bbf62eb23929890250e81d340}{get\+\_\+time\+\_\+minutes}} ()
+\item 
+void \mbox{\hyperlink{classrecipe_ac26e6f210e5b290e227bd374adddac57}{set\+\_\+time\+\_\+minutes}} (int)
+\item 
+std\+::string \mbox{\hyperlink{classrecipe_a3f4df61c6836bfc3c6e947530a7a3b87}{get\+\_\+cuisine\+\_\+type}} ()
+\item 
+void \mbox{\hyperlink{classrecipe_a9553619f933b35a95728b54f5f578439}{set\+\_\+cuisine\+\_\+type}} (std\+::string)
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, int $>$ \mbox{\hyperlink{classrecipe_af6dc5459fc10042a901306365c4febb2}{get\+\_\+ingredients}} ()
+\item 
+void \mbox{\hyperlink{classrecipe_a1d504996cb16b18b45ff6666f7cef2a1}{set\+\_\+ingredients}} (std\+::unordered\+\_\+map$<$ std\+::string, int $>$)
+\item 
+void \mbox{\hyperlink{classrecipe_a1ddd158b1d3c55d98d7aae810b2a9ed9}{increment\+\_\+ingredient\+\_\+amount}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em ingrediant +1 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrecipe_ac61706614c0a7dc2032873cf7d522ac5}{decrement\+\_\+ingredient\+\_\+amount}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em ingrediant -\/1 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrecipe_a6a5653ed0c5a4f429d52843581094b4b}{set\+\_\+ingredient\+\_\+amount}} (std\+::string, int)
+\begin{DoxyCompactList}\small\item\em change ingrediant number \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, int $>$ \mbox{\hyperlink{classrecipe_a6c008e8ca35e3386321a0952ad5e273e}{get\+\_\+kitchenware}} ()
+\item 
+void \mbox{\hyperlink{classrecipe_aed57185f99d142ff41ad547420256245}{set\+\_\+kitchenware}} (std\+::unordered\+\_\+map$<$ std\+::string, int $>$)
+\item 
+void \mbox{\hyperlink{classrecipe_a08728c8c8241adf93f9fafabeed71c4f}{increment\+\_\+kitchenware\+\_\+amount}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em kitchenware +1 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrecipe_aa30448a22688e2c2b6cc3c16e6f1a93a}{decrement\+\_\+kitchenware\+\_\+amount}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em kitchenware -\/1 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrecipe_a97f6ba90ce51bc8d4230c762783bb059}{set\+\_\+kitchenware\+\_\+amount}} (std\+::string, int)
+\begin{DoxyCompactList}\small\item\em change kitchenware number \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrecipe_ab71d667a28460a7bd4942f0f8d363469}{set\+\_\+procedure}} (std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$)
+\begin{DoxyCompactList}\small\item\em set procedure that user input \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ \mbox{\hyperlink{classrecipe_a929872377443fbd9067bb65101d7a0c6}{get\+\_\+procedure}} ()
+\begin{DoxyCompactList}\small\item\em return procedure \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this class have all function need to create a recipe and all recipe function that usefull 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrecipe_a7a3e8d97c8cbb89ed6e1a9de50c25be7}\label{classrecipe_a7a3e8d97c8cbb89ed6e1a9de50c25be7}} 
+\index{recipe@{recipe}!recipe@{recipe}}
+\index{recipe@{recipe}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{recipe()}{recipe()}}
+{\footnotesize\ttfamily recipe\+::recipe (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+\_\+recipe\+\_\+id,  }\item[{std\+::string}]{new\+\_\+recipe\+\_\+name,  }\item[{std\+::string}]{new\+\_\+cuisine,  }\item[{int}]{new\+\_\+time\+\_\+minutes,  }\item[{std\+::unordered\+\_\+map$<$ std\+::string, int $>$}]{new\+\_\+ingredients,  }\item[{std\+::unordered\+\_\+map$<$ std\+::string, int $>$}]{new\+\_\+kitchenware,  }\item[{std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$}]{new\+\_\+procedure }\end{DoxyParamCaption})}
+
+
+
+this class have all function need to create a recipe and all recipe function that usefull 
+
+\begin{DoxyAuthor}{Author}
+Jiaao Cai 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2021/11/30 this class have all function need to create a recipe and all recipe function that usefull 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+recipe\+\_\+id} & give id \\
+\hline
+{\em new\+\_\+recipe\+\_\+name} & give name \\
+\hline
+{\em new\+\_\+cuisine} & new cuisine \\
+\hline
+{\em new\+\_\+time\+\_\+minutes} & cook time \\
+\hline
+{\em new\+\_\+ingredients} & add new ingredients \\
+\hline
+{\em new\+\_\+procedure} & add new procedure \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrecipe_ac61706614c0a7dc2032873cf7d522ac5}\label{classrecipe_ac61706614c0a7dc2032873cf7d522ac5}} 
+\index{recipe@{recipe}!decrement\_ingredient\_amount@{decrement\_ingredient\_amount}}
+\index{decrement\_ingredient\_amount@{decrement\_ingredient\_amount}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{decrement\_ingredient\_amount()}{decrement\_ingredient\_amount()}}
+{\footnotesize\ttfamily void recipe\+::decrement\+\_\+ingredient\+\_\+amount (\begin{DoxyParamCaption}\item[{std\+::string}]{ingredient\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+ingrediant -\/1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ingredient\+\_\+id} & witch ingredient \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrecipe_aa30448a22688e2c2b6cc3c16e6f1a93a}\label{classrecipe_aa30448a22688e2c2b6cc3c16e6f1a93a}} 
+\index{recipe@{recipe}!decrement\_kitchenware\_amount@{decrement\_kitchenware\_amount}}
+\index{decrement\_kitchenware\_amount@{decrement\_kitchenware\_amount}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{decrement\_kitchenware\_amount()}{decrement\_kitchenware\_amount()}}
+{\footnotesize\ttfamily void recipe\+::decrement\+\_\+kitchenware\+\_\+amount (\begin{DoxyParamCaption}\item[{std\+::string}]{kitchenware\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+kitchenware -\/1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kitchenware\+\_\+id} & witch kitchenware \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrecipe_a3f4df61c6836bfc3c6e947530a7a3b87}\label{classrecipe_a3f4df61c6836bfc3c6e947530a7a3b87}} 
+\index{recipe@{recipe}!get\_cuisine\_type@{get\_cuisine\_type}}
+\index{get\_cuisine\_type@{get\_cuisine\_type}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{get\_cuisine\_type()}{get\_cuisine\_type()}}
+{\footnotesize\ttfamily std\+::string recipe\+::get\+\_\+cuisine\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+cuisine\+\_\+type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecipe_af6dc5459fc10042a901306365c4febb2}\label{classrecipe_af6dc5459fc10042a901306365c4febb2}} 
+\index{recipe@{recipe}!get\_ingredients@{get\_ingredients}}
+\index{get\_ingredients@{get\_ingredients}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{get\_ingredients()}{get\_ingredients()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, int $>$ recipe\+::get\+\_\+ingredients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+ingredients 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecipe_a6c008e8ca35e3386321a0952ad5e273e}\label{classrecipe_a6c008e8ca35e3386321a0952ad5e273e}} 
+\index{recipe@{recipe}!get\_kitchenware@{get\_kitchenware}}
+\index{get\_kitchenware@{get\_kitchenware}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{get\_kitchenware()}{get\_kitchenware()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, int $>$ recipe\+::get\+\_\+kitchenware (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+kitchenware 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecipe_a929872377443fbd9067bb65101d7a0c6}\label{classrecipe_a929872377443fbd9067bb65101d7a0c6}} 
+\index{recipe@{recipe}!get\_procedure@{get\_procedure}}
+\index{get\_procedure@{get\_procedure}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{get\_procedure()}{get\_procedure()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ recipe\+::get\+\_\+procedure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+return procedure 
+
+\begin{DoxyReturn}{Returns}
+procedure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecipe_a647b1c00fbcedbe8919e251c550700c4}\label{classrecipe_a647b1c00fbcedbe8919e251c550700c4}} 
+\index{recipe@{recipe}!get\_recipe\_id@{get\_recipe\_id}}
+\index{get\_recipe\_id@{get\_recipe\_id}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{get\_recipe\_id()}{get\_recipe\_id()}}
+{\footnotesize\ttfamily std\+::string recipe\+::get\+\_\+recipe\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+recipe\+\_\+id ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecipe_a8607cf7bbf62eb23929890250e81d340}\label{classrecipe_a8607cf7bbf62eb23929890250e81d340}} 
+\index{recipe@{recipe}!get\_time\_minutes@{get\_time\_minutes}}
+\index{get\_time\_minutes@{get\_time\_minutes}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{get\_time\_minutes()}{get\_time\_minutes()}}
+{\footnotesize\ttfamily int recipe\+::get\+\_\+time\+\_\+minutes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+time\+\_\+minutes return cook time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecipe_a1ddd158b1d3c55d98d7aae810b2a9ed9}\label{classrecipe_a1ddd158b1d3c55d98d7aae810b2a9ed9}} 
+\index{recipe@{recipe}!increment\_ingredient\_amount@{increment\_ingredient\_amount}}
+\index{increment\_ingredient\_amount@{increment\_ingredient\_amount}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{increment\_ingredient\_amount()}{increment\_ingredient\_amount()}}
+{\footnotesize\ttfamily void recipe\+::increment\+\_\+ingredient\+\_\+amount (\begin{DoxyParamCaption}\item[{std\+::string}]{ingredient\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+ingrediant +1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ingredient\+\_\+id} & witch ingredient \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrecipe_a08728c8c8241adf93f9fafabeed71c4f}\label{classrecipe_a08728c8c8241adf93f9fafabeed71c4f}} 
+\index{recipe@{recipe}!increment\_kitchenware\_amount@{increment\_kitchenware\_amount}}
+\index{increment\_kitchenware\_amount@{increment\_kitchenware\_amount}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{increment\_kitchenware\_amount()}{increment\_kitchenware\_amount()}}
+{\footnotesize\ttfamily void recipe\+::increment\+\_\+kitchenware\+\_\+amount (\begin{DoxyParamCaption}\item[{std\+::string}]{kitchenware\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+kitchenware +1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kitchenware\+\_\+id} & witch kitchenware \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrecipe_a9553619f933b35a95728b54f5f578439}\label{classrecipe_a9553619f933b35a95728b54f5f578439}} 
+\index{recipe@{recipe}!set\_cuisine\_type@{set\_cuisine\_type}}
+\index{set\_cuisine\_type@{set\_cuisine\_type}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{set\_cuisine\_type()}{set\_cuisine\_type()}}
+{\footnotesize\ttfamily void recipe\+::set\+\_\+cuisine\+\_\+type (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+\_\+cuisine\+\_\+type }\end{DoxyParamCaption})}
+
+set new cuisine type 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+cuisine\+\_\+type} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrecipe_a6a5653ed0c5a4f429d52843581094b4b}\label{classrecipe_a6a5653ed0c5a4f429d52843581094b4b}} 
+\index{recipe@{recipe}!set\_ingredient\_amount@{set\_ingredient\_amount}}
+\index{set\_ingredient\_amount@{set\_ingredient\_amount}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{set\_ingredient\_amount()}{set\_ingredient\_amount()}}
+{\footnotesize\ttfamily void recipe\+::set\+\_\+ingredient\+\_\+amount (\begin{DoxyParamCaption}\item[{std\+::string}]{ingredient\+\_\+id,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+change ingrediant number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ingredient\+\_\+id} & witch ingredient \\
+\hline
+{\em amount} & new number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrecipe_a1d504996cb16b18b45ff6666f7cef2a1}\label{classrecipe_a1d504996cb16b18b45ff6666f7cef2a1}} 
+\index{recipe@{recipe}!set\_ingredients@{set\_ingredients}}
+\index{set\_ingredients@{set\_ingredients}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{set\_ingredients()}{set\_ingredients()}}
+{\footnotesize\ttfamily void recipe\+::set\+\_\+ingredients (\begin{DoxyParamCaption}\item[{std\+::unordered\+\_\+map$<$ std\+::string, int $>$}]{new\+\_\+ingredients }\end{DoxyParamCaption})}
+
+set a new ingredients 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+ingredients} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrecipe_aed57185f99d142ff41ad547420256245}\label{classrecipe_aed57185f99d142ff41ad547420256245}} 
+\index{recipe@{recipe}!set\_kitchenware@{set\_kitchenware}}
+\index{set\_kitchenware@{set\_kitchenware}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{set\_kitchenware()}{set\_kitchenware()}}
+{\footnotesize\ttfamily void recipe\+::set\+\_\+kitchenware (\begin{DoxyParamCaption}\item[{std\+::unordered\+\_\+map$<$ std\+::string, int $>$}]{new\+\_\+kitchenware }\end{DoxyParamCaption})}
+
+set a new kitchenware 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+kitchenware} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrecipe_a97f6ba90ce51bc8d4230c762783bb059}\label{classrecipe_a97f6ba90ce51bc8d4230c762783bb059}} 
+\index{recipe@{recipe}!set\_kitchenware\_amount@{set\_kitchenware\_amount}}
+\index{set\_kitchenware\_amount@{set\_kitchenware\_amount}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{set\_kitchenware\_amount()}{set\_kitchenware\_amount()}}
+{\footnotesize\ttfamily void recipe\+::set\+\_\+kitchenware\+\_\+amount (\begin{DoxyParamCaption}\item[{std\+::string}]{kitchenware\+\_\+id,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+change kitchenware number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kitchenware\+\_\+id} & witch ingredient \\
+\hline
+{\em amount} & new number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrecipe_ab71d667a28460a7bd4942f0f8d363469}\label{classrecipe_ab71d667a28460a7bd4942f0f8d363469}} 
+\index{recipe@{recipe}!set\_procedure@{set\_procedure}}
+\index{set\_procedure@{set\_procedure}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{set\_procedure()}{set\_procedure()}}
+{\footnotesize\ttfamily void recipe\+::set\+\_\+procedure (\begin{DoxyParamCaption}\item[{std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$}]{new\+\_\+procedures }\end{DoxyParamCaption})}
+
+
+
+set procedure that user input 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+procedures} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrecipe_a1d97e3a9aa33308911a758272e95cd69}\label{classrecipe_a1d97e3a9aa33308911a758272e95cd69}} 
+\index{recipe@{recipe}!set\_recipe\_id@{set\_recipe\_id}}
+\index{set\_recipe\_id@{set\_recipe\_id}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{set\_recipe\_id()}{set\_recipe\_id()}}
+{\footnotesize\ttfamily void recipe\+::set\+\_\+recipe\+\_\+id (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+recipe\+\_\+id }\end{DoxyParamCaption})}
+
+set a new id 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+recipe\+\_\+id} & new id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrecipe_ac16394fd7c9079d47e34d2628ba663e0}\label{classrecipe_ac16394fd7c9079d47e34d2628ba663e0}} 
+\index{recipe@{recipe}!set\_recipe\_name@{set\_recipe\_name}}
+\index{set\_recipe\_name@{set\_recipe\_name}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{set\_recipe\_name()}{set\_recipe\_name()}}
+{\footnotesize\ttfamily void recipe\+::set\+\_\+recipe\+\_\+name (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+\_\+recipe\+\_\+name }\end{DoxyParamCaption})}
+
+set a new name 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+recipe\+\_\+name} & new name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrecipe_ac26e6f210e5b290e227bd374adddac57}\label{classrecipe_ac26e6f210e5b290e227bd374adddac57}} 
+\index{recipe@{recipe}!set\_time\_minutes@{set\_time\_minutes}}
+\index{set\_time\_minutes@{set\_time\_minutes}!recipe@{recipe}}
+\doxysubsubsection{\texorpdfstring{set\_time\_minutes()}{set\_time\_minutes()}}
+{\footnotesize\ttfamily void recipe\+::set\+\_\+time\+\_\+minutes (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+time\+\_\+minutes }\end{DoxyParamCaption})}
+
+set a new cook time 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+time\+\_\+minutes} & new cooke time \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+recipe.\+h\item 
+recipe.\+cpp\end{DoxyCompactItemize}

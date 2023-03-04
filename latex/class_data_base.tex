@@ -1,0 +1,370 @@
+\hypertarget{class_data_base}{}\doxysection{Data\+Base Class Reference}
+\label{class_data_base}\index{DataBase@{DataBase}}
+
+
+\mbox{\hyperlink{class_data_base}{Data\+Base}} class is to use to connect to database.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_base_a9fbd4936704ce4de391f92e92a072074}{Data\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Database object constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data_base_a9d4629e705ccaa4897e9650222a2a648}{$\sim$\+Data\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Database deconstructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_ingredient}{Ingredient}} $\ast$ $>$ \mbox{\hyperlink{class_data_base_a35736f61282fd9bfe209eea1e844ef16}{get\+All\+Ingredient}} ()
+\begin{DoxyCompactList}\small\item\em Get all ingredients. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_kitchenware}{Kitchenware}} $\ast$ $>$ \mbox{\hyperlink{class_data_base_ac9e26058ae0b6f722cfd6a2976a7e798}{get\+All\+Kitchenware}} ()
+\begin{DoxyCompactList}\small\item\em Get all kitchenware. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classrecipe}{recipe}} $\ast$ $>$ \mbox{\hyperlink{class_data_base_a70a3b2dc2c0b9f0a8b523b0ddfbf73ca}{get\+All\+Recipe}} ()
+\begin{DoxyCompactList}\small\item\em Get all recipe. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classrecipe}{recipe}} $\ast$ $>$ \mbox{\hyperlink{class_data_base_a57c9363c4d0a5bc9e1e1d3a90a4ea4a3}{search\+Recipe}} (std\+::string search)
+\begin{DoxyCompactList}\small\item\em Search recipe. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classrecipe}{recipe}} $\ast$ $>$ \mbox{\hyperlink{class_data_base_a486d484797fc60e2edb4a2995ef6e526}{filter\+Recipe\+Name\+ASC}} ()
+\begin{DoxyCompactList}\small\item\em Filter Recipe by name in ASC order. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classrecipe}{recipe}} $\ast$ $>$ \mbox{\hyperlink{class_data_base_a45b6623a1be4a3da37279516b74826a0}{filter\+Recipe\+Name\+DESC}} ()
+\begin{DoxyCompactList}\small\item\em Filter Recipe by name in DESC order. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classrecipe}{recipe}} $\ast$ $>$ \mbox{\hyperlink{class_data_base_a90353a8d7f3600f37e3d576e861033ef}{filter\+Recipe\+Duration\+ASC}} ()
+\begin{DoxyCompactList}\small\item\em Filter Recipe by duration in ASC order. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classrecipe}{recipe}} $\ast$ $>$ \mbox{\hyperlink{class_data_base_a4a676a91a457e5adaa7b6f09a6813f63}{filter\+Recipe\+Duration\+DESC}} ()
+\begin{DoxyCompactList}\small\item\em Filter Recipe by duration in DESC order. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, int $>$ \mbox{\hyperlink{class_data_base_aa91df321313c8ca919bd3786cc615ff9}{get\+Kitchen\+Ware\+Inventory}} ()
+\begin{DoxyCompactList}\small\item\em Get kitchenware inventory. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, int $>$ \mbox{\hyperlink{class_data_base_a1be5394d1d80b8096ae7153f1b32ccfb}{get\+Ingredient\+Inventory}} ()
+\begin{DoxyCompactList}\small\item\em Get ingredient inventory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ingredient}{Ingredient}} $\ast$ \mbox{\hyperlink{class_data_base_a8730d032092bc87202afbcfe8462fb89}{get\+Ingredient\+By\+ID}} (const std\+::string \&id)
+\begin{DoxyCompactList}\small\item\em Get ingredient by ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_kitchenware}{Kitchenware}} $\ast$ \mbox{\hyperlink{class_data_base_afa4f3f338dd731f5228d40d6437efd0e}{get\+Kitchenware\+By\+ID}} (const std\+::string \&id)
+\begin{DoxyCompactList}\small\item\em Get kitchenware by ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrecipe}{recipe}} $\ast$ \mbox{\hyperlink{class_data_base_a206dbefcdb2f4e19727630168819b1de}{get\+Recipe\+By\+ID}} (const std\+::string \&ID)
+\begin{DoxyCompactList}\small\item\em Get recipe by ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data_base_a682fea58e85a7aa7a3f1881cea667fa5}{add\+Ingredient\+Inventory}} (const std\+::string \&ingredient\+\_\+id, int amount)
+\begin{DoxyCompactList}\small\item\em Add a ingredient into inventory. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data_base_ab2b1c458308ab63b67ad5f1e62eb7ad9}{add\+Kitchenware\+Inventory}} (const std\+::string \&kitchenware\+\_\+id, int amount)
+\begin{DoxyCompactList}\small\item\em Add a kitchenware into inventory. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data_base_a6248fdf27ccd1f37ebfe84a861bf1334}{update\+Recipe}} (\mbox{\hyperlink{classrecipe}{recipe}} $\ast$rec)
+\begin{DoxyCompactList}\small\item\em Updating Recipe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data_base_afe2e398b33d6ba0b6f20d4c2de681796}{add\+Recipe}} (\mbox{\hyperlink{classrecipe}{recipe}} $\ast$rec)
+\begin{DoxyCompactList}\small\item\em Add new recipe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_data_base}{Data\+Base}} class is to use to connect to database. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_data_base_a9fbd4936704ce4de391f92e92a072074}\label{class_data_base_a9fbd4936704ce4de391f92e92a072074}} 
+\index{DataBase@{DataBase}!DataBase@{DataBase}}
+\index{DataBase@{DataBase}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{DataBase()}{DataBase()}}
+{\footnotesize\ttfamily Data\+Base\+::\+Data\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Database object constructor. 
+
+Creating a Database object to allow QWidget to connect to window \begin{DoxyAuthor}{Author}
+Donald Cheng Hong Zou 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2021/11/30 Database object constructor to allow each class to get and set data to the database file 
+\end{DoxyDate}
+\mbox{\Hypertarget{class_data_base_a9d4629e705ccaa4897e9650222a2a648}\label{class_data_base_a9d4629e705ccaa4897e9650222a2a648}} 
+\index{DataBase@{DataBase}!````~DataBase@{$\sim$DataBase}}
+\index{````~DataBase@{$\sim$DataBase}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{$\sim$DataBase()}{~DataBase()}}
+{\footnotesize\ttfamily Data\+Base\+::$\sim$\+Data\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Database deconstructor. 
+
+Database deconstructor to allow memory to be clear 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_data_base_a682fea58e85a7aa7a3f1881cea667fa5}\label{class_data_base_a682fea58e85a7aa7a3f1881cea667fa5}} 
+\index{DataBase@{DataBase}!addIngredientInventory@{addIngredientInventory}}
+\index{addIngredientInventory@{addIngredientInventory}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{addIngredientInventory()}{addIngredientInventory()}}
+{\footnotesize\ttfamily bool Data\+Base\+::add\+Ingredient\+Inventory (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ingredient\+\_\+id,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Add a ingredient into inventory. 
+
+A method to add a ingredient to the ingredient inventory table in database 
+\begin{DoxyParams}{Parameters}
+{\em ingredient\+\_\+id} & \mbox{\hyperlink{class_ingredient}{Ingredient}} ID \\
+\hline
+{\em amount} & The amount of the the ingredient \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If it updated successfully 
+
+false If it updated unsuccessfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_ab2b1c458308ab63b67ad5f1e62eb7ad9}\label{class_data_base_ab2b1c458308ab63b67ad5f1e62eb7ad9}} 
+\index{DataBase@{DataBase}!addKitchenwareInventory@{addKitchenwareInventory}}
+\index{addKitchenwareInventory@{addKitchenwareInventory}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{addKitchenwareInventory()}{addKitchenwareInventory()}}
+{\footnotesize\ttfamily bool Data\+Base\+::add\+Kitchenware\+Inventory (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{kitchenware\+\_\+id,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Add a kitchenware into inventory. 
+
+A method to add a kitchenware to the kitchenware inventory table in database 
+\begin{DoxyParams}{Parameters}
+{\em kitchenware\+\_\+id} & \mbox{\hyperlink{class_kitchenware}{Kitchenware}} ID \\
+\hline
+{\em amount} & The amount the user want to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If it updated successfully 
+
+false If it updated unsuccessfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_afe2e398b33d6ba0b6f20d4c2de681796}\label{class_data_base_afe2e398b33d6ba0b6f20d4c2de681796}} 
+\index{DataBase@{DataBase}!addRecipe@{addRecipe}}
+\index{addRecipe@{addRecipe}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{addRecipe()}{addRecipe()}}
+{\footnotesize\ttfamily bool Data\+Base\+::add\+Recipe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrecipe}{recipe}} $\ast$}]{rec }\end{DoxyParamCaption})}
+
+
+
+Add new recipe. 
+
+Add a new recipe into the database and return true or false 
+\begin{DoxyParams}{Parameters}
+{\em rec} & Recipe object pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if adding successfully 
+
+false if adding not success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_a90353a8d7f3600f37e3d576e861033ef}\label{class_data_base_a90353a8d7f3600f37e3d576e861033ef}} 
+\index{DataBase@{DataBase}!filterRecipeDurationASC@{filterRecipeDurationASC}}
+\index{filterRecipeDurationASC@{filterRecipeDurationASC}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{filterRecipeDurationASC()}{filterRecipeDurationASC()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classrecipe}{recipe}} $\ast$ $>$ Data\+Base\+::filter\+Recipe\+Duration\+ASC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Filter Recipe by duration in ASC order. 
+
+Filter recipe by duration in ascending order \begin{DoxyReturn}{Returns}
+vector$<$recipe$\ast$$>$ A vector containing the result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_a4a676a91a457e5adaa7b6f09a6813f63}\label{class_data_base_a4a676a91a457e5adaa7b6f09a6813f63}} 
+\index{DataBase@{DataBase}!filterRecipeDurationDESC@{filterRecipeDurationDESC}}
+\index{filterRecipeDurationDESC@{filterRecipeDurationDESC}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{filterRecipeDurationDESC()}{filterRecipeDurationDESC()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classrecipe}{recipe}} $\ast$ $>$ Data\+Base\+::filter\+Recipe\+Duration\+DESC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Filter Recipe by duration in DESC order. 
+
+Filter recipe by duration in descending order \begin{DoxyReturn}{Returns}
+vector$<$recipe$\ast$$>$ A vector containing the result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_a486d484797fc60e2edb4a2995ef6e526}\label{class_data_base_a486d484797fc60e2edb4a2995ef6e526}} 
+\index{DataBase@{DataBase}!filterRecipeNameASC@{filterRecipeNameASC}}
+\index{filterRecipeNameASC@{filterRecipeNameASC}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{filterRecipeNameASC()}{filterRecipeNameASC()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classrecipe}{recipe}} $\ast$ $>$ Data\+Base\+::filter\+Recipe\+Name\+ASC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Filter Recipe by name in ASC order. 
+
+Filter recipe by name in ascending order \begin{DoxyReturn}{Returns}
+vector$<$recipe$\ast$$>$ A vector containing the result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_a45b6623a1be4a3da37279516b74826a0}\label{class_data_base_a45b6623a1be4a3da37279516b74826a0}} 
+\index{DataBase@{DataBase}!filterRecipeNameDESC@{filterRecipeNameDESC}}
+\index{filterRecipeNameDESC@{filterRecipeNameDESC}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{filterRecipeNameDESC()}{filterRecipeNameDESC()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classrecipe}{recipe}} $\ast$ $>$ Data\+Base\+::filter\+Recipe\+Name\+DESC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Filter Recipe by name in DESC order. 
+
+Filter recipe by name in descending order \begin{DoxyReturn}{Returns}
+vector$<$recipe$\ast$$>$ A vector containing the result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_a35736f61282fd9bfe209eea1e844ef16}\label{class_data_base_a35736f61282fd9bfe209eea1e844ef16}} 
+\index{DataBase@{DataBase}!getAllIngredient@{getAllIngredient}}
+\index{getAllIngredient@{getAllIngredient}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{getAllIngredient()}{getAllIngredient()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_ingredient}{Ingredient}} $\ast$ $>$ Data\+Base\+::get\+All\+Ingredient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all ingredients. 
+
+A method to return all ingredient from the database to a vector which contained Ingredient$\ast$ \begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Ingredient$\ast$$>$ A vector contained \mbox{\hyperlink{class_ingredient}{Ingredient}} object pointers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_ac9e26058ae0b6f722cfd6a2976a7e798}\label{class_data_base_ac9e26058ae0b6f722cfd6a2976a7e798}} 
+\index{DataBase@{DataBase}!getAllKitchenware@{getAllKitchenware}}
+\index{getAllKitchenware@{getAllKitchenware}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{getAllKitchenware()}{getAllKitchenware()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_kitchenware}{Kitchenware}} $\ast$ $>$ Data\+Base\+::get\+All\+Kitchenware (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all kitchenware. 
+
+A method to get all kitchenware from the database and return all kitchenware in a vector \begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Kitchenware$\ast$$>$ A vector which contained \mbox{\hyperlink{class_kitchenware}{Kitchenware}} object pointers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_a70a3b2dc2c0b9f0a8b523b0ddfbf73ca}\label{class_data_base_a70a3b2dc2c0b9f0a8b523b0ddfbf73ca}} 
+\index{DataBase@{DataBase}!getAllRecipe@{getAllRecipe}}
+\index{getAllRecipe@{getAllRecipe}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{getAllRecipe()}{getAllRecipe()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classrecipe}{recipe}} $\ast$ $>$ Data\+Base\+::get\+All\+Recipe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all recipe. 
+
+A method to get all recipe into a vector from the database \begin{DoxyReturn}{Returns}
+vector$<$recipe$\ast$$>$ A vector containing all recipe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_a8730d032092bc87202afbcfe8462fb89}\label{class_data_base_a8730d032092bc87202afbcfe8462fb89}} 
+\index{DataBase@{DataBase}!getIngredientByID@{getIngredientByID}}
+\index{getIngredientByID@{getIngredientByID}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{getIngredientByID()}{getIngredientByID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ingredient}{Ingredient}} $\ast$ Data\+Base\+::get\+Ingredient\+By\+ID (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{id }\end{DoxyParamCaption})}
+
+
+
+Get ingredient by ID. 
+
+A method to get ingredient by using their ID, and return the ingredient object 
+\begin{DoxyParams}{Parameters}
+{\em id} & \mbox{\hyperlink{class_ingredient}{Ingredient}} ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ingredient$\ast$ Object that contained the ingredient of tha ID 
+
+nullptr Will return nullptr if the ingredient does not exist 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_a1be5394d1d80b8096ae7153f1b32ccfb}\label{class_data_base_a1be5394d1d80b8096ae7153f1b32ccfb}} 
+\index{DataBase@{DataBase}!getIngredientInventory@{getIngredientInventory}}
+\index{getIngredientInventory@{getIngredientInventory}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{getIngredientInventory()}{getIngredientInventory()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, int $>$ Data\+Base\+::get\+Ingredient\+Inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get ingredient inventory. 
+
+A method to get ingredient inventory, which is what the user had and return it in a unordered map \begin{DoxyReturn}{Returns}
+std\+::unordered\+\_\+map$<$std\+::string, int$>$ A unordered\+\_\+map contained a string as key and integer as value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_afa4f3f338dd731f5228d40d6437efd0e}\label{class_data_base_afa4f3f338dd731f5228d40d6437efd0e}} 
+\index{DataBase@{DataBase}!getKitchenwareByID@{getKitchenwareByID}}
+\index{getKitchenwareByID@{getKitchenwareByID}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{getKitchenwareByID()}{getKitchenwareByID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kitchenware}{Kitchenware}} $\ast$ Data\+Base\+::get\+Kitchenware\+By\+ID (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{id }\end{DoxyParamCaption})}
+
+
+
+Get kitchenware by ID. 
+
+A method to get kitchenware by its ID and return the kitchenware method 
+\begin{DoxyParams}{Parameters}
+{\em id} & \mbox{\hyperlink{class_kitchenware}{Kitchenware}} ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Kitchenware$\ast$ Pointer of a \mbox{\hyperlink{class_kitchenware}{Kitchenware}} object 
+
+nullptr Will return this if the ingredient ID does not exist 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_aa91df321313c8ca919bd3786cc615ff9}\label{class_data_base_aa91df321313c8ca919bd3786cc615ff9}} 
+\index{DataBase@{DataBase}!getKitchenWareInventory@{getKitchenWareInventory}}
+\index{getKitchenWareInventory@{getKitchenWareInventory}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{getKitchenWareInventory()}{getKitchenWareInventory()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, int $>$ Data\+Base\+::get\+Kitchen\+Ware\+Inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get kitchenware inventory. 
+
+A method to get the kitchenware inventory, and return it as a unordered\+\_\+map \begin{DoxyReturn}{Returns}
+std\+::unordered\+\_\+map$<$std\+::string, int$>$ A unordered\+\_\+map contained a string as key and integer as value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_a206dbefcdb2f4e19727630168819b1de}\label{class_data_base_a206dbefcdb2f4e19727630168819b1de}} 
+\index{DataBase@{DataBase}!getRecipeByID@{getRecipeByID}}
+\index{getRecipeByID@{getRecipeByID}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{getRecipeByID()}{getRecipeByID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrecipe}{recipe}} $\ast$ Data\+Base\+::get\+Recipe\+By\+ID (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ID }\end{DoxyParamCaption})}
+
+
+
+Get recipe by ID. 
+
+A method to get a recipe by its ID from database 
+\begin{DoxyParams}{Parameters}
+{\em ID} & A string recipe ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+recipe$\ast$ A recipe object pointer containing the data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_a57c9363c4d0a5bc9e1e1d3a90a4ea4a3}\label{class_data_base_a57c9363c4d0a5bc9e1e1d3a90a4ea4a3}} 
+\index{DataBase@{DataBase}!searchRecipe@{searchRecipe}}
+\index{searchRecipe@{searchRecipe}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{searchRecipe()}{searchRecipe()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classrecipe}{recipe}} $\ast$ $>$ Data\+Base\+::search\+Recipe (\begin{DoxyParamCaption}\item[{std\+::string}]{search }\end{DoxyParamCaption})}
+
+
+
+Search recipe. 
+
+A method to search recipe by using keyword to search a recipe 
+\begin{DoxyParams}{Parameters}
+{\em search} & A keyword of a recipe\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$recipe$\ast$$>$ A vector containing all matched recipe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_base_a6248fdf27ccd1f37ebfe84a861bf1334}\label{class_data_base_a6248fdf27ccd1f37ebfe84a861bf1334}} 
+\index{DataBase@{DataBase}!updateRecipe@{updateRecipe}}
+\index{updateRecipe@{updateRecipe}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{updateRecipe()}{updateRecipe()}}
+{\footnotesize\ttfamily bool Data\+Base\+::update\+Recipe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrecipe}{recipe}} $\ast$}]{rec }\end{DoxyParamCaption})}
+
+
+
+Updating Recipe. 
+
+A method to update recipe into the database 
+\begin{DoxyParams}{Parameters}
+{\em rec} & a recipe pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if update successfully 
+
+false if update not success 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_data_base_8h}{Data\+Base.\+h}}\item 
+Data\+Base.\+cpp\end{DoxyCompactItemize}

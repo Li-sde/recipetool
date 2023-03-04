@@ -1,0 +1,89 @@
+\hypertarget{class_kitchen_window}{}\doxysection{Kitchen\+Window Class Reference}
+\label{class_kitchen_window}\index{KitchenWindow@{KitchenWindow}}
+
+
+kitchen inventory window show the buttons of current kitchenware inventory, user can edit current amount and add new kitchenware.  
+
+
+
+
+{\ttfamily \#include $<$Kitchen\+Window.\+h$>$}
+
+Inheritance diagram for Kitchen\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_kitchen_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_kitchen_window_a5dad204cdee5348742af109f118f7987}\label{class_kitchen_window_a5dad204cdee5348742af109f118f7987}} 
+void {\bfseries Kitchen\+Window\+Nav} ()
+\begin{DoxyCompactList}\small\item\em set window title \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_kitchen_window_a16a00a06e1a0cc8804cab229451b1f9b}\label{class_kitchen_window_a16a00a06e1a0cc8804cab229451b1f9b}} 
+void {\bfseries Kitchen\+Window\+Nav\+Body} ()
+\begin{DoxyCompactList}\small\item\em set window title, add, back button, title name and scroll bar \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_kitchen_window_ac14a37d5811a2955ed71360f8ac1cc68}\label{class_kitchen_window_ac14a37d5811a2955ed71360f8ac1cc68}} 
+void {\bfseries Kitchen\+Window\+Main\+Body} ()
+\begin{DoxyCompactList}\small\item\em set window main body \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_kitchen_window_a7ba81a002198f8b9ef24990858787288}\label{class_kitchen_window_a7ba81a002198f8b9ef24990858787288}} 
+void {\bfseries Kitchen\+Kitchenware\+List} ()
+\begin{DoxyCompactList}\small\item\em set kitchenwares buttons \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_kitchen_window_a4cfe6f9131f7f224722d16458fe7ba5d}\label{class_kitchen_window_a4cfe6f9131f7f224722d16458fe7ba5d}} 
+void {\bfseries handle\+Back\+Button} ()
+\begin{DoxyCompactList}\small\item\em handle back button event when user click back button \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_kitchen_window_a87269034b02e9219a6f7f634b91c3d49}\label{class_kitchen_window_a87269034b02e9219a6f7f634b91c3d49}} 
+void {\bfseries handle\+Add\+Button} ()
+\begin{DoxyCompactList}\small\item\em handle add button event when user click add button \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_kitchen_window_af91d1419fb8fc0c90a48b547add01640}\label{class_kitchen_window_af91d1419fb8fc0c90a48b547add01640}} 
+void {\bfseries handle\+Inventory\+Button} ()
+\begin{DoxyCompactList}\small\item\em handle inventory button event when user click inventory button \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kitchen_window_aec406b6942b24173597199d1266b82df}{Kitchen\+Window}} (\mbox{\hyperlink{class_kitchenware_inventory}{Kitchenware\+Inventory}} $\ast$Kitchen, \mbox{\hyperlink{class_data_base}{Data\+Base}} $\ast$db)
+\begin{DoxyCompactList}\small\item\em set the window layout \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_kitchen_window_a25299c0ebe7c4082e6e99836ec9b6cb2}\label{class_kitchen_window_a25299c0ebe7c4082e6e99836ec9b6cb2}} 
+void {\bfseries Window\+Show} ()
+\begin{DoxyCompactList}\small\item\em show window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_kitchen_window_adbe2578d9380d0e243264fa2470a1261}\label{class_kitchen_window_adbe2578d9380d0e243264fa2470a1261}} 
+void {\bfseries Window\+Hide} ()
+\begin{DoxyCompactList}\small\item\em hide window \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+kitchen inventory window show the buttons of current kitchenware inventory, user can edit current amount and add new kitchenware. 
+
+\begin{DoxyAuthor}{Author}
+Jingxing Li 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2021/11/30 , \mbox{\hyperlink{class_data_base}{Data\+Base}} $\ast$db). 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_kitchen_window_aec406b6942b24173597199d1266b82df}\label{class_kitchen_window_aec406b6942b24173597199d1266b82df}} 
+\index{KitchenWindow@{KitchenWindow}!KitchenWindow@{KitchenWindow}}
+\index{KitchenWindow@{KitchenWindow}!KitchenWindow@{KitchenWindow}}
+\doxysubsubsection{\texorpdfstring{KitchenWindow()}{KitchenWindow()}}
+{\footnotesize\ttfamily Kitchen\+Window\+::\+Kitchen\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kitchenware_inventory}{Kitchenware\+Inventory}} $\ast$}]{Kitchen,  }\item[{\mbox{\hyperlink{class_data_base}{Data\+Base}} $\ast$}]{db }\end{DoxyParamCaption})}
+
+
+
+set the window layout 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Kitchen} & kitchenware inventory object \\
+\hline
+{\em db} & database pointer for main to call kitchenware methods \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Kitchen\+Window.\+h\item 
+Kitchen\+Window.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\hypertarget{_kitchen_add_window_8h_source}{}\doxysection{Kitchen\+Add\+Window.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GROUP23\_KitchenADDWINDOW\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GROUP23\_KitchenADDWINDOW\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QGridLayout>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QStackedLayout>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QTextBlock>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QLineEdit>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QTextEdit>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QGroupBox>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QListWidget>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QScrollBar>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QColor>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QStyle>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QFont>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <QComboBox>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <QMessageBox>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_data_base_8h}{DataBase.h}}"{}}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}main.h"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{28 \textcolor{keyword}{class }\mbox{\hyperlink{class_kitchen_add_window}{KitchenAddWindow}} : \textcolor{keyword}{public} QMainWindow\{}
+\DoxyCodeLine{29 Q\_OBJECT}
+\DoxyCodeLine{30 \textcolor{keyword}{private}:}
+\DoxyCodeLine{31     QWidget *previouswindow;}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_data_base}{DataBase}} *DB;}
+\DoxyCodeLine{33     \mbox{\hyperlink{class_kitchenware_inventory}{KitchenwareInventory}} *kit;}
+\DoxyCodeLine{34     QWidget *KitchenAddWindowWidget;}
+\DoxyCodeLine{35     QVBoxLayout *KitchenAddLayout;}
+\DoxyCodeLine{36     QGroupBox *KitchenwareList;}
+\DoxyCodeLine{37     QGroupBox *Body;}
+\DoxyCodeLine{38     QVBoxLayout *BodyLayout;}
+\DoxyCodeLine{39     QScrollArea *scroll;}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     std::unordered\_map<QComboBox*, QLineEdit*> kitchenwares\_map;}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} KitchenSelectKitchenware();}
+\DoxyCodeLine{44     QGroupBox *KitchenwareAddRow();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} KitchenwareNewRow();}
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} KitchenDeletekitchenwareRow();}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} KitchenNewSubmit();}
+\DoxyCodeLine{51 \textcolor{keyword}{public}:}
+\DoxyCodeLine{52     \mbox{\hyperlink{class_kitchen_add_window_a6a682b616ce2265330fb31e734143942}{KitchenAddWindow}}(\mbox{\hyperlink{class_data_base}{DataBase}} *db, QWidget *prev);}
+\DoxyCodeLine{53     \mbox{\hyperlink{class_kitchen_add_window}{\string~KitchenAddWindow}}();}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kitchen_add_window_aabb086239f4f61f23e4ec6d4d5aa0fe6}{WindowShow}}();}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kitchen_add_window_a12547f19206225886a1325f938ecef62}{WindowHide}}();}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//GROUP23\_KitchenADDWINDOW\_H}}
+
+\end{DoxyCode}

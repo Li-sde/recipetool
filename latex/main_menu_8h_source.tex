@@ -1,0 +1,65 @@
+\hypertarget{main_menu_8h_source}{}\doxysection{main\+Menu.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef GROUP23\_MAINMENU\_H}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define GROUP23\_MAINMENU\_H}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QApplication>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QGroupBox>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QComboBox>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QGridLayout>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <QTime>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <Qtimer>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}main.h"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_data_base_8h}{DataBase.h}}"{}}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{28 \textcolor{keyword}{class }\mbox{\hyperlink{classmain_menu}{mainMenu}} : \textcolor{keyword}{public} QMainWindow \{}
+\DoxyCodeLine{29     Q\_OBJECT}
+\DoxyCodeLine{30 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \mbox{\hyperlink{classmain_menu_a009985c0111921075ec909a35d50cb98}{mainMenu}}(\mbox{\hyperlink{class_data_base}{DataBase}} *DB);}
+\DoxyCodeLine{32     \mbox{\hyperlink{classmain_menu_a678e20e05ce6566c1810ef47497d2d50}{\string~mainMenu}}();}
+\DoxyCodeLine{33 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} HandleRecipeButtonPress();}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} HandleIngredientButtonPress();}
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} HandleKitchenwareButtonPress();}
+\DoxyCodeLine{37 \textcolor{keyword}{private}:}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_data_base}{DataBase}} *db;}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     QWidget *window;}
+\DoxyCodeLine{41     QGridLayout *layout;}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     QGridLayout *timeDateLayout;}
+\DoxyCodeLine{44     QWidget *timeDateWidget;}
+\DoxyCodeLine{45     QLabel *currentDateLabel;}
+\DoxyCodeLine{46     QLabel *currentTimeLabel;}
+\DoxyCodeLine{47     QTimer *timer;}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     QWidget *recipeWidget;}
+\DoxyCodeLine{50     QGridLayout *recipeLayout;}
+\DoxyCodeLine{51     QPushButton *recipeButton;}
+\DoxyCodeLine{52     QLabel *recipeLayoutTitle;}
+\DoxyCodeLine{53     QLabel *recipeLayoutText;}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     QWidget *ingredientWidget;}
+\DoxyCodeLine{56     QGridLayout *ingredientLayout;}
+\DoxyCodeLine{57     QPushButton *ingredientButton;}
+\DoxyCodeLine{58     QLabel *ingredientLayoutTitle;}
+\DoxyCodeLine{59     QLabel *ingredientLayoutText;}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     QWidget *kitchenwareWidget;}
+\DoxyCodeLine{62     QGridLayout *kitchenwareLayout;}
+\DoxyCodeLine{63     QPushButton *kitchenwareButton;}
+\DoxyCodeLine{64     QLabel *kitchenwareLayoutTitle;}
+\DoxyCodeLine{65     QLabel *kitchenwareLayoutText;}
+\DoxyCodeLine{66 \};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//GROUP23\_MAINMENU\_H}}
+
+\end{DoxyCode}

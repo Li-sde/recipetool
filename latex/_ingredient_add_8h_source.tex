@@ -1,0 +1,60 @@
+\hypertarget{_ingredient_add_8h_source}{}\doxysection{Ingredient\+Add.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Jerry Mao on 2021-\/11-\/27.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef GROUP23\_INGREDIENTADD\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define GROUP23\_INGREDIENTADD\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QGridLayout>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QStackedLayout>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QTextBlock>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QLineEdit>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QTextEdit>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QGroupBox>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QListWidget>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QScrollBar>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <QColor>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <QStyle>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <QFont>}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <QScrollArea>}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include <QComboBox>}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include <QMessageBox>}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include "{}IngredientInventory.h"{}}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_data_base_8h}{DataBase.h}}"{}}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include "{}main.h"{}}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{33 \textcolor{keyword}{class }\mbox{\hyperlink{class_ingredient_add}{IngredientAdd}} : \textcolor{keyword}{public} QWidget\{}
+\DoxyCodeLine{34 Q\_OBJECT}
+\DoxyCodeLine{35 \textcolor{keyword}{private}:}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_data_base}{DataBase}} *DB;}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_ingredient_inventory}{IngredientInventory}} *Inv;}
+\DoxyCodeLine{38     QWidget *IngredientAddW = \textcolor{keyword}{new} QWidget();}
+\DoxyCodeLine{39     QVBoxLayout *IngredientAddLayout = \textcolor{keyword}{new} QVBoxLayout();}
+\DoxyCodeLine{40     QGroupBox *IngredientList = \textcolor{keyword}{new} QGroupBox();}
+\DoxyCodeLine{41     QGroupBox *Body = \textcolor{keyword}{new} QGroupBox();}
+\DoxyCodeLine{42     QVBoxLayout *BodyLayout = \textcolor{keyword}{new} QVBoxLayout();}
+\DoxyCodeLine{43     std::unordered\_map<QComboBox*, QLineEdit*> Ingredient\_map;}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} SelectIngredient();}
+\DoxyCodeLine{45     QGroupBox *IngredientAddRow();}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{48         \textcolor{keywordtype}{void} IngredientNewSubmit();}
+\DoxyCodeLine{49         \textcolor{keywordtype}{void} showIngredientWindow();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{keyword}{public}:}
+\DoxyCodeLine{52     \mbox{\hyperlink{class_ingredient_add_af5a7bd90ade7b5a44981d728b1dbfafd}{IngredientAdd}}(\mbox{\hyperlink{class_data_base}{DataBase}} *db);}
+\DoxyCodeLine{53     \mbox{\hyperlink{class_ingredient_add_a7580a0c1a18dac476cdb7b83bc0d7c32}{\string~IngredientAdd}}();}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//GROUP23\_INGREDIENTADD\_H}}
+
+\end{DoxyCode}

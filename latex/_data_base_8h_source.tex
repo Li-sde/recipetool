@@ -1,0 +1,58 @@
+\hypertarget{_data_base_8h_source}{}\doxysection{Data\+Base.\+h}
+\mbox{\hyperlink{_data_base_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#ifndef GROUP23\_DATABASE\_H}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define GROUP23\_DATABASE\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <cstdio>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QSqlDatabase>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QSqlDriver>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QSqlError>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QSqlQuery>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QSqlRecord>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QSqlResult>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <QDebug>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <unordered\_map>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <nlohmann/json.hpp>}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include "{}Ingredient.h"{}}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include "{}Kitchenware.h"{}}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include "{}recipe.h"{}}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{33 \textcolor{keyword}{using namespace }nlohmann;}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{38 \textcolor{keyword}{class }\mbox{\hyperlink{class_data_base}{DataBase}} \{}
+\DoxyCodeLine{39 \textcolor{keyword}{private}:}
+\DoxyCodeLine{43     QSqlDatabase m\_db;}
+\DoxyCodeLine{47     QSqlQuery *search;}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     std::vector<recipe*> filterRecipe(std::string field, std::string order);}
+\DoxyCodeLine{50 \textcolor{keyword}{public}:}
+\DoxyCodeLine{51     \mbox{\hyperlink{class_data_base_a9fbd4936704ce4de391f92e92a072074}{DataBase}}();}
+\DoxyCodeLine{52     \mbox{\hyperlink{class_data_base_a9d4629e705ccaa4897e9650222a2a648}{\string~DataBase}}();}
+\DoxyCodeLine{53     std::vector<Ingredient*> \mbox{\hyperlink{class_data_base_a35736f61282fd9bfe209eea1e844ef16}{getAllIngredient}}();}
+\DoxyCodeLine{54     std::vector<Kitchenware*> \mbox{\hyperlink{class_data_base_ac9e26058ae0b6f722cfd6a2976a7e798}{getAllKitchenware}}();}
+\DoxyCodeLine{55     std::vector<recipe*> \mbox{\hyperlink{class_data_base_a70a3b2dc2c0b9f0a8b523b0ddfbf73ca}{getAllRecipe}}();}
+\DoxyCodeLine{56     std::vector<recipe*> \mbox{\hyperlink{class_data_base_a57c9363c4d0a5bc9e1e1d3a90a4ea4a3}{searchRecipe}}(std::string search);}
+\DoxyCodeLine{57     std::vector<recipe*> \mbox{\hyperlink{class_data_base_a486d484797fc60e2edb4a2995ef6e526}{filterRecipeNameASC}}();}
+\DoxyCodeLine{58     std::vector<recipe*> \mbox{\hyperlink{class_data_base_a45b6623a1be4a3da37279516b74826a0}{filterRecipeNameDESC}}();}
+\DoxyCodeLine{59     std::vector<recipe*> \mbox{\hyperlink{class_data_base_a90353a8d7f3600f37e3d576e861033ef}{filterRecipeDurationASC}}();}
+\DoxyCodeLine{60     std::vector<recipe*> \mbox{\hyperlink{class_data_base_a4a676a91a457e5adaa7b6f09a6813f63}{filterRecipeDurationDESC}}();}
+\DoxyCodeLine{61     std::unordered\_map<std::string, int> \mbox{\hyperlink{class_data_base_aa91df321313c8ca919bd3786cc615ff9}{getKitchenWareInventory}}();}
+\DoxyCodeLine{62     std::unordered\_map<std::string, int> \mbox{\hyperlink{class_data_base_a1be5394d1d80b8096ae7153f1b32ccfb}{getIngredientInventory}}();}
+\DoxyCodeLine{63     \mbox{\hyperlink{class_ingredient}{Ingredient}}* \mbox{\hyperlink{class_data_base_a8730d032092bc87202afbcfe8462fb89}{getIngredientByID}}(\textcolor{keyword}{const} std::string\& \textcolor{keywordtype}{id});}
+\DoxyCodeLine{64     \mbox{\hyperlink{class_kitchenware}{Kitchenware}}* \mbox{\hyperlink{class_data_base_afa4f3f338dd731f5228d40d6437efd0e}{getKitchenwareByID}}(\textcolor{keyword}{const} std::string\& \textcolor{keywordtype}{id});}
+\DoxyCodeLine{65     \mbox{\hyperlink{classrecipe}{recipe}}* \mbox{\hyperlink{class_data_base_a206dbefcdb2f4e19727630168819b1de}{getRecipeByID}}(\textcolor{keyword}{const} std::string\& ID);}
+\DoxyCodeLine{66     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_data_base_a682fea58e85a7aa7a3f1881cea667fa5}{addIngredientInventory}}(\textcolor{keyword}{const} std::string\& ingredient\_id, \textcolor{keywordtype}{int} amount);}
+\DoxyCodeLine{67     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_data_base_ab2b1c458308ab63b67ad5f1e62eb7ad9}{addKitchenwareInventory}}(\textcolor{keyword}{const} std::string\& kitchenware\_id, \textcolor{keywordtype}{int} amount);}
+\DoxyCodeLine{68     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_data_base_a6248fdf27ccd1f37ebfe84a861bf1334}{updateRecipe}}(\mbox{\hyperlink{classrecipe}{recipe}}* rec);}
+\DoxyCodeLine{69     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_data_base_afe2e398b33d6ba0b6f20d4c2de681796}{addRecipe}}(\mbox{\hyperlink{classrecipe}{recipe}}* rec);}
+\DoxyCodeLine{70 \};}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//GROUP23\_DATABASE\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,64 @@
+\hypertarget{_kitchen_edit_window_8h_source}{}\doxysection{Kitchen\+Edit\+Window.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GROUP23\_KitchenEditWindow\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GROUP23\_KitchenEditWindow\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QGridLayout>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QStackedLayout>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QTextBlock>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QLineEdit>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QTextEdit>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QGroupBox>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QListWidget>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QScrollBar>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QColor>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QStyle>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QFont>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}Ingredient.h"{}}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_data_base_8h}{DataBase.h}}"{}}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <QComboBox>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}main.h"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include "{}IngredientInventory.h"{}}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{28 \textcolor{keyword}{class }\mbox{\hyperlink{class_kitchen_edit_window}{KitchenEditWindow}} : QMainWindow\{}
+\DoxyCodeLine{29 Q\_OBJECT}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{private}:}
+\DoxyCodeLine{32     std::string KitID;}
+\DoxyCodeLine{33     \mbox{\hyperlink{class_kitchenware_inventory}{KitchenwareInventory}} *Kit;}
+\DoxyCodeLine{34     unordered\_map<string, int> KitInv;}
+\DoxyCodeLine{35     QWidget *KitchenEditWindowW = \textcolor{keyword}{new} QWidget();}
+\DoxyCodeLine{36     QVBoxLayout *MainLayout = \textcolor{keyword}{new} QVBoxLayout();}
+\DoxyCodeLine{37     QGroupBox *Nav = \textcolor{keyword}{new} QGroupBox();}
+\DoxyCodeLine{38     QGridLayout *NavLayout = \textcolor{keyword}{new} QGridLayout();}
+\DoxyCodeLine{39     QGroupBox *MainBody = \textcolor{keyword}{new} QGroupBox;}
+\DoxyCodeLine{40     QVBoxLayout *MainBodyLayout = \textcolor{keyword}{new} QVBoxLayout();}
+\DoxyCodeLine{41     \mbox{\hyperlink{class_data_base}{DataBase}} *DB;}
+\DoxyCodeLine{42     QScrollArea *MainBodyScroll = \textcolor{keyword}{new} QScrollArea();}
+\DoxyCodeLine{43     QLineEdit *UpdateTextBox = \textcolor{keyword}{new} QLineEdit();}
+\DoxyCodeLine{44     QLabel *FeedBack = \textcolor{keyword}{new} QLabel();}
+\DoxyCodeLine{45     QLabel *KitAmount = \textcolor{keyword}{new} QLabel();}
+\DoxyCodeLine{46 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} KitchenEditWindowNav();}
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} KitchenEditWindowNavBody();}
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} KitchenEditWindowMainBody();}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} KitchenwareAmount();}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} KitchenwareInventoryUpdate();}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} UpdateHandle();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \textcolor{keyword}{public}:}
+\DoxyCodeLine{55     \mbox{\hyperlink{class_kitchen_edit_window_a5f505f1e98b65796d840c00615dd7c55}{KitchenEditWindow}}(\textcolor{keywordtype}{string} KitIDp, \mbox{\hyperlink{class_data_base}{DataBase}} *DBp, \mbox{\hyperlink{class_kitchenware_inventory}{KitchenwareInventory}} *Kitp);}
+\DoxyCodeLine{56     \mbox{\hyperlink{class_kitchen_edit_window}{\string~KitchenEditWindow}}();}
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kitchen_edit_window_af7a015ea23f101f75129dcfb4e78d474}{WindowShow}}();}
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kitchen_edit_window_a269eec4e872152628c7709e6c837d205}{WindowHide}}();}
+\DoxyCodeLine{59 \};}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//GROUP23\_KitchenEditWindow\_H}}
+
+\end{DoxyCode}

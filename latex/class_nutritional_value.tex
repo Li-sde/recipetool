@@ -1,0 +1,266 @@
+\hypertarget{class_nutritional_value}{}\doxysection{Nutritional\+Value Class Reference}
+\label{class_nutritional_value}\index{NutritionalValue@{NutritionalValue}}
+
+
+Nutritional value class.  
+
+
+
+
+{\ttfamily \#include $<$Nutritional\+Value.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_nutritional_value_a353b3d4c69b11741b9fb7eb07abf85e8}{Nutritional\+Value}} (int calories, double total\+Fat, double sodium, double total\+Carbs, double protein, std\+::unordered\+\_\+map$<$ std\+::string, double $>$ other\+Nutritional\+Values)
+\begin{DoxyCompactList}\small\item\em \+: Nutritional value class This class is responsible for containing the nutritional value for each ingredient \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nutritional_value_a7a6bdf132d4676e3370cd01593a02308}{$\sim$\+Nutritional\+Value}} ()
+\item 
+int \mbox{\hyperlink{class_nutritional_value_a49ff596442dd05f95be7b8e5ec6fb672}{get\+Calories}} ()
+\begin{DoxyCompactList}\small\item\em Get Calories. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_nutritional_value_ab1dd1a7003634eb8da6896b284a7eee8}{get\+Total\+Fat}} ()
+\begin{DoxyCompactList}\small\item\em Get total fat. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_nutritional_value_af905b3437375e6e72654d8aa02f3ee47}{get\+Sodium}} ()
+\begin{DoxyCompactList}\small\item\em Get sodium. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_nutritional_value_a240a378285a8cfc71319a3b1e112b463}{get\+Total\+Carbs}} ()
+\begin{DoxyCompactList}\small\item\em Get carbohydrate. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_nutritional_value_a04962b8d8e84d1bf17beecb55ddd6337}{get\+Protein}} ()
+\begin{DoxyCompactList}\small\item\em Get protein. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_nutritional_value_a7b6abccafe9ceb6f3e202b990c620641}{get\+Other\+Nutritional\+Value}} (std\+::string nutrient\+Name)
+\begin{DoxyCompactList}\small\item\em Get other nutritional value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_nutritional_value_a368612a20d32215c574c4227bf5c37aa}{set\+Calories}} (int calories)
+\begin{DoxyCompactList}\small\item\em Set calories. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_nutritional_value_a1ef9c88d38d4a727682dfd708ab01438}{set\+Total\+Fat}} (double total\+Fat)
+\begin{DoxyCompactList}\small\item\em Set total fat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_nutritional_value_ae765cb96a560da7b6c29208a1dc3818c}{set\+Sodium}} (double sodium)
+\begin{DoxyCompactList}\small\item\em Set sodium. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_nutritional_value_a9293f3db4509b8ad6267059dd1d53b31}{set\+Total\+Carbs}} (double total\+Carbs)
+\begin{DoxyCompactList}\small\item\em Set total\+Carbs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_nutritional_value_a7d6ec76217cd7b16eaf5997ccb052edb}{set\+Protein}} (double protein)
+\begin{DoxyCompactList}\small\item\em Set protein. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_nutritional_value_a56d7384d5b3bac02a7532c55d9614684}{add\+Other\+Nutritional\+Value}} (std\+::string nutrient\+Name, double nutrient\+Amount)
+\begin{DoxyCompactList}\small\item\em Set other nutritional value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Nutritional value class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_nutritional_value_a353b3d4c69b11741b9fb7eb07abf85e8}\label{class_nutritional_value_a353b3d4c69b11741b9fb7eb07abf85e8}} 
+\index{NutritionalValue@{NutritionalValue}!NutritionalValue@{NutritionalValue}}
+\index{NutritionalValue@{NutritionalValue}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{NutritionalValue()}{NutritionalValue()}}
+{\footnotesize\ttfamily Nutritional\+Value\+::\+Nutritional\+Value (\begin{DoxyParamCaption}\item[{int}]{calories,  }\item[{double}]{total\+Fat,  }\item[{double}]{sodium,  }\item[{double}]{total\+Carbs,  }\item[{double}]{protein,  }\item[{std\+::unordered\+\_\+map$<$ std\+::string, double $>$}]{other\+Nutritional\+Values }\end{DoxyParamCaption})}
+
+
+
+\+: Nutritional value class This class is responsible for containing the nutritional value for each ingredient 
+
+\begin{DoxyAuthor}{Author}
+\+: Bo Yuan Shi Constructor for this class
+\end{DoxyAuthor}
+\mbox{\hyperlink{class_nutritional_value}{Nutritional\+Value}} constructor 
+\begin{DoxyParams}{Parameters}
+{\em calories} & Calories of the ingredient \\
+\hline
+{\em total\+Fat} & Total Fat of the ingredient \\
+\hline
+{\em sodium} & Sodium for the ingredient \\
+\hline
+{\em total\+Carbs} & Total Carbohydrate for the ingredient \\
+\hline
+{\em protein} & Total protein for the ingredient \\
+\hline
+{\em other\+Nutritional\+Values} & A map containing other nutritional value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_nutritional_value_a7a6bdf132d4676e3370cd01593a02308}\label{class_nutritional_value_a7a6bdf132d4676e3370cd01593a02308}} 
+\index{NutritionalValue@{NutritionalValue}!````~NutritionalValue@{$\sim$NutritionalValue}}
+\index{````~NutritionalValue@{$\sim$NutritionalValue}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{$\sim$NutritionalValue()}{~NutritionalValue()}}
+{\footnotesize\ttfamily Nutritional\+Value\+::$\sim$\+Nutritional\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+De-\/constructor for this class 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_nutritional_value_a56d7384d5b3bac02a7532c55d9614684}\label{class_nutritional_value_a56d7384d5b3bac02a7532c55d9614684}} 
+\index{NutritionalValue@{NutritionalValue}!addOtherNutritionalValue@{addOtherNutritionalValue}}
+\index{addOtherNutritionalValue@{addOtherNutritionalValue}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{addOtherNutritionalValue()}{addOtherNutritionalValue()}}
+{\footnotesize\ttfamily void Nutritional\+Value\+::add\+Other\+Nutritional\+Value (\begin{DoxyParamCaption}\item[{std\+::string}]{nutrient\+Name,  }\item[{double}]{nutrient\+Amount }\end{DoxyParamCaption})}
+
+
+
+Set other nutritional value. 
+
+A setter method other nutritional value 
+\begin{DoxyParams}{Parameters}
+{\em nutrient\+Name} & Name of the nutrition \\
+\hline
+{\em nutrient\+Amount} & Amount of the nutrition \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_nutritional_value_a49ff596442dd05f95be7b8e5ec6fb672}\label{class_nutritional_value_a49ff596442dd05f95be7b8e5ec6fb672}} 
+\index{NutritionalValue@{NutritionalValue}!getCalories@{getCalories}}
+\index{getCalories@{getCalories}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{getCalories()}{getCalories()}}
+{\footnotesize\ttfamily int Nutritional\+Value\+::get\+Calories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get Calories. 
+
+Get calories for this ingredient \begin{DoxyReturn}{Returns}
+int An Integer value for calories 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_nutritional_value_a7b6abccafe9ceb6f3e202b990c620641}\label{class_nutritional_value_a7b6abccafe9ceb6f3e202b990c620641}} 
+\index{NutritionalValue@{NutritionalValue}!getOtherNutritionalValue@{getOtherNutritionalValue}}
+\index{getOtherNutritionalValue@{getOtherNutritionalValue}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{getOtherNutritionalValue()}{getOtherNutritionalValue()}}
+{\footnotesize\ttfamily double Nutritional\+Value\+::get\+Other\+Nutritional\+Value (\begin{DoxyParamCaption}\item[{std\+::string}]{nutrient\+Name }\end{DoxyParamCaption})}
+
+
+
+Get other nutritional value. 
+
+Get the value for other nutrient by name 
+\begin{DoxyParams}{Parameters}
+{\em nutrient\+Name} & A string containing the nutritional name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double An decimal value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_nutritional_value_a04962b8d8e84d1bf17beecb55ddd6337}\label{class_nutritional_value_a04962b8d8e84d1bf17beecb55ddd6337}} 
+\index{NutritionalValue@{NutritionalValue}!getProtein@{getProtein}}
+\index{getProtein@{getProtein}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{getProtein()}{getProtein()}}
+{\footnotesize\ttfamily double Nutritional\+Value\+::get\+Protein (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get protein. 
+
+Get total protein for this ingredient \begin{DoxyReturn}{Returns}
+double An decimal value for protein 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_nutritional_value_af905b3437375e6e72654d8aa02f3ee47}\label{class_nutritional_value_af905b3437375e6e72654d8aa02f3ee47}} 
+\index{NutritionalValue@{NutritionalValue}!getSodium@{getSodium}}
+\index{getSodium@{getSodium}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{getSodium()}{getSodium()}}
+{\footnotesize\ttfamily double Nutritional\+Value\+::get\+Sodium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get sodium. 
+
+Get sodium for this ingredient \begin{DoxyReturn}{Returns}
+double An decimal value for sodium 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_nutritional_value_a240a378285a8cfc71319a3b1e112b463}\label{class_nutritional_value_a240a378285a8cfc71319a3b1e112b463}} 
+\index{NutritionalValue@{NutritionalValue}!getTotalCarbs@{getTotalCarbs}}
+\index{getTotalCarbs@{getTotalCarbs}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{getTotalCarbs()}{getTotalCarbs()}}
+{\footnotesize\ttfamily double Nutritional\+Value\+::get\+Total\+Carbs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get carbohydrate. 
+
+Get total carbohydrate for this ingredient \begin{DoxyReturn}{Returns}
+double An decimal value for carbohydrate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_nutritional_value_ab1dd1a7003634eb8da6896b284a7eee8}\label{class_nutritional_value_ab1dd1a7003634eb8da6896b284a7eee8}} 
+\index{NutritionalValue@{NutritionalValue}!getTotalFat@{getTotalFat}}
+\index{getTotalFat@{getTotalFat}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{getTotalFat()}{getTotalFat()}}
+{\footnotesize\ttfamily double Nutritional\+Value\+::get\+Total\+Fat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get total fat. 
+
+Get total fat for this ingredient \begin{DoxyReturn}{Returns}
+double An decimal value for total fat 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_nutritional_value_a368612a20d32215c574c4227bf5c37aa}\label{class_nutritional_value_a368612a20d32215c574c4227bf5c37aa}} 
+\index{NutritionalValue@{NutritionalValue}!setCalories@{setCalories}}
+\index{setCalories@{setCalories}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{setCalories()}{setCalories()}}
+{\footnotesize\ttfamily void Nutritional\+Value\+::set\+Calories (\begin{DoxyParamCaption}\item[{int}]{calories }\end{DoxyParamCaption})}
+
+
+
+Set calories. 
+
+A setter method for calories 
+\begin{DoxyParams}{Parameters}
+{\em calories} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_nutritional_value_a7d6ec76217cd7b16eaf5997ccb052edb}\label{class_nutritional_value_a7d6ec76217cd7b16eaf5997ccb052edb}} 
+\index{NutritionalValue@{NutritionalValue}!setProtein@{setProtein}}
+\index{setProtein@{setProtein}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{setProtein()}{setProtein()}}
+{\footnotesize\ttfamily void Nutritional\+Value\+::set\+Protein (\begin{DoxyParamCaption}\item[{double}]{protein }\end{DoxyParamCaption})}
+
+
+
+Set protein. 
+
+A setter method for protein 
+\begin{DoxyParams}{Parameters}
+{\em protein} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_nutritional_value_ae765cb96a560da7b6c29208a1dc3818c}\label{class_nutritional_value_ae765cb96a560da7b6c29208a1dc3818c}} 
+\index{NutritionalValue@{NutritionalValue}!setSodium@{setSodium}}
+\index{setSodium@{setSodium}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{setSodium()}{setSodium()}}
+{\footnotesize\ttfamily void Nutritional\+Value\+::set\+Sodium (\begin{DoxyParamCaption}\item[{double}]{sodium }\end{DoxyParamCaption})}
+
+
+
+Set sodium. 
+
+A setter method for sodium 
+\begin{DoxyParams}{Parameters}
+{\em sodium} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_nutritional_value_a9293f3db4509b8ad6267059dd1d53b31}\label{class_nutritional_value_a9293f3db4509b8ad6267059dd1d53b31}} 
+\index{NutritionalValue@{NutritionalValue}!setTotalCarbs@{setTotalCarbs}}
+\index{setTotalCarbs@{setTotalCarbs}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{setTotalCarbs()}{setTotalCarbs()}}
+{\footnotesize\ttfamily void Nutritional\+Value\+::set\+Total\+Carbs (\begin{DoxyParamCaption}\item[{double}]{total\+Carbs }\end{DoxyParamCaption})}
+
+
+
+Set total\+Carbs. 
+
+A setter method for total\+Carbs 
+\begin{DoxyParams}{Parameters}
+{\em total\+Carbs} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_nutritional_value_a1ef9c88d38d4a727682dfd708ab01438}\label{class_nutritional_value_a1ef9c88d38d4a727682dfd708ab01438}} 
+\index{NutritionalValue@{NutritionalValue}!setTotalFat@{setTotalFat}}
+\index{setTotalFat@{setTotalFat}!NutritionalValue@{NutritionalValue}}
+\doxysubsubsection{\texorpdfstring{setTotalFat()}{setTotalFat()}}
+{\footnotesize\ttfamily void Nutritional\+Value\+::set\+Total\+Fat (\begin{DoxyParamCaption}\item[{double}]{total\+Fat }\end{DoxyParamCaption})}
+
+
+
+Set total fat. 
+
+A setter method for total fat 
+\begin{DoxyParams}{Parameters}
+{\em total\+Fat} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Nutritional\+Value.\+h\item 
+Nutritional\+Value.\+cpp\end{DoxyCompactItemize}

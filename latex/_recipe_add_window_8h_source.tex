@@ -1,0 +1,72 @@
+\hypertarget{_recipe_add_window_8h_source}{}\doxysection{Recipe\+Add\+Window.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Donald Zou on 2021-\/11-\/25.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef GROUP23\_RECIPEADDWINDOW\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define GROUP23\_RECIPEADDWINDOW\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_data_base_8h}{DataBase.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}main.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_recipe_add_window}{RecipeAddWindow}} : \textcolor{keyword}{public} QMainWindow\{}
+\DoxyCodeLine{15     Q\_OBJECT}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_data_base}{DataBase}} *DB;}
+\DoxyCodeLine{18     \mbox{\hyperlink{classrecipe}{recipe}} *rec;}
+\DoxyCodeLine{19     QWidget *RecipeAddWindowWidget;}
+\DoxyCodeLine{20     QVBoxLayout *RecipeAddLayout;}
+\DoxyCodeLine{21     QLineEdit *RecipeName;}
+\DoxyCodeLine{22     QLineEdit *RecipeType;}
+\DoxyCodeLine{23     QLineEdit *RecipeDuration;}
+\DoxyCodeLine{24     QGroupBox *IngredientList;}
+\DoxyCodeLine{25     QGroupBox *KitchenwareList;}
+\DoxyCodeLine{26     QGroupBox *ProcedureList;}
+\DoxyCodeLine{27     QGroupBox *Body;}
+\DoxyCodeLine{28     QVBoxLayout *BodyLayout;}
+\DoxyCodeLine{29     QScrollArea *scroll;}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     std::unordered\_map<QComboBox*, QLineEdit*> ingredients\_map;}
+\DoxyCodeLine{33     std::unordered\_map<QComboBox*, QLineEdit*> kitchenware\_map;}
+\DoxyCodeLine{34     std::unordered\_map<QLineEdit*, QTextEdit*> procedure\_map;}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} RecipeAddHeader();}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} RecipeAddRecipeName();}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} RecipeAddTypeAndDuration();}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} RecipeAddIngredient();}
+\DoxyCodeLine{41     QGroupBox *RecipeAddIngredientRow();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} RecipeAddKitchenware();}
+\DoxyCodeLine{44     QGroupBox *RecipeAddKitchenwareRow();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} RecipeAddProcedure();}
+\DoxyCodeLine{47     QGroupBox *RecipeAddProcedureRow();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} closeEvent(QCloseEvent *bar);}
+\DoxyCodeLine{50 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} RecipeNewIngredientRow();}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} RecipeDeleteIngredientRow();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} RecipeNewKitchenwareRow();}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} RecipeDeleteKitchenwareRow();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} RecipeNewProcedureRow();}
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} RecipeDeleteProcedureRow();}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} RecipeNewSubmit();}
+\DoxyCodeLine{61 \textcolor{keyword}{public}:}
+\DoxyCodeLine{62     \mbox{\hyperlink{class_recipe_add_window_aacd452960fce8e420830a9025597787a}{RecipeAddWindow}}(\mbox{\hyperlink{class_data_base}{DataBase}} *db);}
+\DoxyCodeLine{63     \mbox{\hyperlink{class_recipe_add_window_ae7d258515e2a06bafc02779c811d3480}{\string~RecipeAddWindow}}();}
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_recipe_add_window_a7f4d89f0c4b31110870dbfe4e57a2123}{WindowShow}}();}
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_recipe_add_window_a757144bb5952b16dad9ee6dc32384747}{WindowClose}}();}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//GROUP23\_RECIPEADDWINDOW\_H}}
+
+\end{DoxyCode}

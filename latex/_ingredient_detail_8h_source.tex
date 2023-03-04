@@ -1,0 +1,73 @@
+\hypertarget{_ingredient_detail_8h_source}{}\doxysection{Ingredient\+Detail.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Jerry Mao on 2021-\/11-\/27.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef GROUP23\_INGREDIENTDETAIL\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define GROUP23\_INGREDIENTDETAIL\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QGridLayout>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QStackedLayout>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QTextBlock>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QLineEdit>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QTextEdit>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QGroupBox>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QListWidget>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QScrollBar>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <QColor>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <QStyle>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <QFont>}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <regex>}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include "{}Ingredient.h"{}}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_data_base_8h}{DataBase.h}}"{}}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include "{}main.h"{}}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include "{}IngredientInventory.h"{}}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{32 \textcolor{keyword}{class }\mbox{\hyperlink{class_ingredient_detail}{IngredientDetail}} : QMainWindow\{}
+\DoxyCodeLine{33 Q\_OBJECT}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{private}:}
+\DoxyCodeLine{36     \textcolor{keywordtype}{string} IngID;}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_ingredient}{Ingredient}} *Ing;}
+\DoxyCodeLine{38     unordered\_map<string, int> IngInv;}
+\DoxyCodeLine{39     QWidget *IngredientDetailW = \textcolor{keyword}{new} QWidget();}
+\DoxyCodeLine{40     QVBoxLayout *MainLayout = \textcolor{keyword}{new} QVBoxLayout();}
+\DoxyCodeLine{41     QGroupBox *Nav = \textcolor{keyword}{new} QGroupBox();}
+\DoxyCodeLine{42     QGridLayout *NavLayout = \textcolor{keyword}{new} QGridLayout();}
+\DoxyCodeLine{43     QGroupBox *MainBody = \textcolor{keyword}{new} QGroupBox;}
+\DoxyCodeLine{44     QVBoxLayout *MainBodyLayout = \textcolor{keyword}{new} QVBoxLayout();}
+\DoxyCodeLine{45     \mbox{\hyperlink{class_data_base}{DataBase}} *DB;}
+\DoxyCodeLine{46     QScrollArea *MainBodyScroll = \textcolor{keyword}{new} QScrollArea();}
+\DoxyCodeLine{47     QLabel *FeedBack = \textcolor{keyword}{new} QLabel();}
+\DoxyCodeLine{48     QLineEdit *UpdateTextBox = \textcolor{keyword}{new} QLineEdit();}
+\DoxyCodeLine{49     QLabel *IngAmount = \textcolor{keyword}{new} QLabel();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} IngredientDetailNav();}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} IngredientDetailNavBody();}
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} IngredientDetailMainBody();}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} IngredientAmount();}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} IngredientNutrition();}
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} IngredientUpdate();}
+\DoxyCodeLine{57     \textcolor{keywordtype}{bool} isNumber(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& str);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} UpdateHandle();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{keyword}{public}:}
+\DoxyCodeLine{63     \mbox{\hyperlink{class_ingredient_detail_a3713f035b4545ea2fa79010250bbeaa6}{IngredientDetail}}(\textcolor{keywordtype}{string} IngIDp, \mbox{\hyperlink{class_data_base}{DataBase}} *DBp);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \mbox{\hyperlink{class_ingredient_detail_afc08884ab16859bc33397acb2313d4e5}{\string~IngredientDetail}}();}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//GROUP23\_INGREDIENTDETAIL\_H}}
+
+\end{DoxyCode}

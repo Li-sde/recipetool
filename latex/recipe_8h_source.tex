@@ -1,0 +1,53 @@
+\hypertarget{recipe_8h_source}{}\doxysection{recipe.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Jiaao Cai on 2021-\/11-\/08.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef GROUP23\_RECIPE\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define GROUP23\_RECIPE\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <unordered\_map>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{classrecipe}{recipe}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     std::string recipe\_name;}
+\DoxyCodeLine{18     std::string cuisine\_type;}
+\DoxyCodeLine{19     std::unordered\_map<std::string, int> ingredients;}
+\DoxyCodeLine{20     std::unordered\_map<std::string, int> kitchenware;}
+\DoxyCodeLine{21     std::unordered\_map<std::string, std::vector<std::string>> procedure;}
+\DoxyCodeLine{22     std::string recipe\_id;}
+\DoxyCodeLine{23     \textcolor{keywordtype}{int} time\_minutes;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26     \mbox{\hyperlink{classrecipe_a7a3e8d97c8cbb89ed6e1a9de50c25be7}{recipe}}(std::string, std::string, std::string, \textcolor{keywordtype}{int},std::unordered\_map<std::string,int>,std::unordered\_map<std::string,int>, std::unordered\_map<std::string, std::vector<std::string>>);}
+\DoxyCodeLine{27     \mbox{\hyperlink{classrecipe_ad6ef435fec950a61a4abad6dadd28362}{\string~recipe}}();}
+\DoxyCodeLine{28     std::string \mbox{\hyperlink{classrecipe_a647b1c00fbcedbe8919e251c550700c4}{get\_recipe\_id}}();}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{classrecipe_a1d97e3a9aa33308911a758272e95cd69}{set\_recipe\_id}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{30     std::string get\_recipe\_name();}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{classrecipe_ac16394fd7c9079d47e34d2628ba663e0}{set\_recipe\_name}}(std::string);}
+\DoxyCodeLine{32     \textcolor{keywordtype}{int} \mbox{\hyperlink{classrecipe_a8607cf7bbf62eb23929890250e81d340}{get\_time\_minutes}}();}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{classrecipe_ac26e6f210e5b290e227bd374adddac57}{set\_time\_minutes}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{34     std::string \mbox{\hyperlink{classrecipe_a3f4df61c6836bfc3c6e947530a7a3b87}{get\_cuisine\_type}}();}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{classrecipe_a9553619f933b35a95728b54f5f578439}{set\_cuisine\_type}}(std::string);}
+\DoxyCodeLine{36     std::unordered\_map<std::string, int> \mbox{\hyperlink{classrecipe_af6dc5459fc10042a901306365c4febb2}{get\_ingredients}}();}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{classrecipe_a1d504996cb16b18b45ff6666f7cef2a1}{set\_ingredients}}(std::unordered\_map<std::string,int>);}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{classrecipe_a1ddd158b1d3c55d98d7aae810b2a9ed9}{increment\_ingredient\_amount}}(std::string );}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{classrecipe_ac61706614c0a7dc2032873cf7d522ac5}{decrement\_ingredient\_amount}}(std::string);}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{classrecipe_a6a5653ed0c5a4f429d52843581094b4b}{set\_ingredient\_amount}}(std::string, \textcolor{keywordtype}{int});}
+\DoxyCodeLine{41     std::unordered\_map<std::string, int> \mbox{\hyperlink{classrecipe_a6c008e8ca35e3386321a0952ad5e273e}{get\_kitchenware}}();}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{classrecipe_aed57185f99d142ff41ad547420256245}{set\_kitchenware}}(std::unordered\_map<std::string,int>);}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{classrecipe_a08728c8c8241adf93f9fafabeed71c4f}{increment\_kitchenware\_amount}}(std::string);}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{classrecipe_aa30448a22688e2c2b6cc3c16e6f1a93a}{decrement\_kitchenware\_amount}}(std::string);}
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{classrecipe_a97f6ba90ce51bc8d4230c762783bb059}{set\_kitchenware\_amount}}(std::string, \textcolor{keywordtype}{int});}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{classrecipe_ab71d667a28460a7bd4942f0f8d363469}{set\_procedure}}(std::unordered\_map<std::string, std::vector<std::string>>);}
+\DoxyCodeLine{47     std::unordered\_map<std::string, std::vector<std::string>> \mbox{\hyperlink{classrecipe_a929872377443fbd9067bb65101d7a0c6}{get\_procedure}}();}
+\DoxyCodeLine{48 \};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//GROUP23\_RECIPE\_H}}
+
+\end{DoxyCode}
